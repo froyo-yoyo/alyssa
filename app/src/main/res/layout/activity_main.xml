@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aac.wsg.alyssa.MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:id="@+id/message"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/messageLayout">
+        </LinearLayout>
+        </HorizontalScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_new_category_name"
+        android:id="@+id/newCategory"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/play"
+        android:layout_alignEnd="@+id/play" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_new_word_name"
+        android:id="@+id/newWord"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/newCategory"
+        android:layout_toStartOf="@+id/newCategory"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_clear_name"
+        android:id="@+id/clear"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/newWord"
+        android:layout_toStartOf="@+id/newWord" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:text="@string/btn_play_name"
+        android:id="@+id/play"
+        android:layout_alignTop="@+id/message"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSelection"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:columnWidth="120dp"
+        android:stretchMode="spacingWidthUniform"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/btn_back_name"
+        android:id="@+id/back"
+        android:layout_below="@+id/message"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

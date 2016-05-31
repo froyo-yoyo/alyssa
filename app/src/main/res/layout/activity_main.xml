@@ -10,14 +10,14 @@
     tools:context="com.aac.wsg.alyssa.MainActivity">
 
     <HorizontalScrollView
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:id="@+id/message"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/newCategory"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="10dp">
+        android:layout_alignRight="@+id/newCategory"
+        android:layout_alignEnd="@+id/newCategory">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -32,8 +32,8 @@
         android:id="@+id/newCategory"
         style="?android:attr/borderlessButtonStyle"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/play"
-        android:layout_alignEnd="@+id/play" />
+        android:layout_alignRight="@+id/buttonSelection"
+        android:layout_alignEnd="@+id/buttonSelection" />
 
     <Button
         style="?android:attr/borderlessButtonStyle"
@@ -55,18 +55,6 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/newWord"
         android:layout_toStartOf="@+id/newWord" />
-
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:text="@string/btn_play_name"
-        android:id="@+id/play"
-        android:layout_alignTop="@+id/message"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp" />
 
     <GridView
         android:layout_width="wrap_content"

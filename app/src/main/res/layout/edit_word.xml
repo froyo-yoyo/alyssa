@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/txt_enter_string"
-        android:id="@+id/textView"
+        android:id="@+id/textEnterString"
         android:layout_gravity="center_horizontal" />
 
     <EditText
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/txt_enter_tags"
-        android:id="@+id/textView2"
+        android:id="@+id/textEnterTags"
         android:layout_margin="10dp" />
 
     <Button
